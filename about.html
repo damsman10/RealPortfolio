@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <link rel="stylesheet" href="./Styles/style.css">
+  <link rel="stylesheet" href="./Styles/about.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@700&family=Lora:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    
+    <header class="nav">
+        
+        <div class="logo">
+            <a href="index.html" class="whiteLogo"><img src="./images/Personal Logo.png" alt="logo"></a>
+            <a href="index.html" class="darkLogo"><img src="./images/Personal-Logo-white.png" alt="logo"></a>
+        </div>
+        
+
+        <div class="right-nav">
+            <div class="hamburgerContainer">
+            <!-- numeric character code/reference in HTML for Hamburger-->
+            <span class="light-ham" style="color: rgb(0, 0, 0);">&#9776;</span>
+            <span class="dark-ham" style="color: rgb(255, 255, 255);">&#9776;</span>
+            </div>
+        
+            <div class="overlay" id="overlay">
+                <div class="closeButton" onclick="closeOverlay()">&times;</div>
+                <ul class="menu" id="navMenuHam">
+                    <li><a href="about.html" class="active">ABOUT</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                
+
+
+            </div>
+        
+        
+
+            <ul class="menu">
+                <li><a href="about.html" class="active">ABOUT</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+
+
+    
+
+            <div class="toggle-button" >
+                <label class="switch" id="togg">
+                    <input type="checkbox" id="toggleCheckbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+        </div>
+        
+    
+    </header>
+
+    <div class="container">   
+
+        <div class="leftSidebar">
+            
+            
+            <div class="relativeContainer">
+                <!-- <div class="middleContent">
+                    <img src="./images/aboutImg.jpeg" alt="" />
+                </div> -->
+            </div>
+
+        </div>
+
+
+        <div class="rightSidebar">
+            
+            
+
+            <div class="text" id="text">
+                <h1>Hi There!</h1>
+
+                <div class="insidePic">
+                    <img src="./images/aboutImg.jpeg" alt="about" width="30%" />
+                </div>
+                <p>I'm Damilola Joseph Oni, a passionate web developer with a flair for turning ideas into interactive digital experiences. My journey in the world of web development is fueled by a love for both creativity and technology.<br><br>
+
+                My codes are always tailored to exact needs of my clients, with the target users in mind. This helps ensure a visually appealing design, fully functional and responsive website.<br><br>
+                
+                My client market is not limited to web development due to my versatility and ability to convincingly use other tools and CMS. I am also a 'leader' in Wordpress design and SquareSpace, with lots of projects and clients to show for it.<br><br>
+
+                I apply my versatility across many tech areas to create enriched Web Projects and bring clients' dreams to life. Now let's bring your idea to life!
+                </p>
+                
+                <div class="download-btn">
+                   <button id="downloadButton" onclick="downloadFile()">Download CV</button>
+                </div>
+                
+            </div>
+            
+            
+
+        </div>
+
+    </div>
+    <script src="./Js/about.js"></script>
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <link rel="stylesheet" href="./Styles/style.css">
+  <link rel="stylesheet" href="./Styles/portfolio.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@700&family=Lora:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+
+</head>
+<body id="body">
+
+    <header class="nav">
+        
+        <div class="logo">
+            <a href="index.html" class="whiteLogo"><img src="./images/Personal Logo.png" alt="logo"></a>
+            <a href="index.html" class="darkLogo"><img src="./images/Personal-Logo-white.png" alt="logo"></a>
+        </div>
+        
+
+        <div class="right-nav">
+            <div class="hamburgerContainer">
+                <!-- numeric character code/reference in HTML for Hamburger-->
+                <span class="light-ham" style="color: rgb(0, 0, 0);">&#9776;</span>
+                <span class="dark-ham" style="color: rgb(255, 255, 255);">&#9776;</span>
+                </div>
+        
+            <div class="overlay" id="overlay">
+                <div class="closeButton" onclick="closeOverlay()">&times;</div>
+                <ul class="menu" id="navMenuHam">
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    <li><a href="portfolio.html" class="active">PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                
+
+
+            </div>
+        
+        
+
+            <ul class="menu">
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="portfolio.html" class="active">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+
+
+    
+
+            <div class="toggle-button" >
+                <label class="switch" id="togg">
+                    <input type="checkbox" id="toggleCheckbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+        </div>
+        
+    
+    </header>
+
+    <!-- <div class="container">
+        
+
+
+
+    </div> -->
+
+    <div class="relativeContainer">
+        <div class="centerContent">
+            <h1>Selected <span style="color: red;">Projects</span></h1>
+            <p>I work with <span style="color: red;">clients</span> around the world to build amazing Web experiences, here are some available projects</p>
+        </div>
+    </div>
+
+
+    
+
+
+    <div class="portContainer">
+        <div class="project-container" id="one">
+            <!-- Overlay to be displayed on hover -->
+            <div class="overlay-container"></div>
+            
+            <div class="project-info">
+
+            
+            <h2>Real Portfolio</h2>
+            <p>The site we are currently on</p>
+            </div>
+            <div class="project-link">
+                <a href="www.nigeria.com" target="_blank"><img src="./images/link.png"></a>
+            </div>
+        </div>
+
+        <div class="project-container" id="two">
+            <div class="overlay-container"></div>
+            
+            <div class="project-info">
+
+            
+            <h2>Recipe Book</h2>
+            <p>My Recipe Website</p>
+            </div>
+            <div class="project-link">
+                <a href="www.nigeria.com" target="_blank"><img src="./images/link.png"></a>
+            </div>
+        </div>
+
+        <div class="project-container" id="three">
+            <div class="overlay-container"></div>
+            
+            <div class="project-info">
+
+            
+            <h2>The Cipher Machine</h2>
+            <p>Encoding and Decoding web application</p>
+            </div>
+            <div class="project-link">
+                <a href="www.nigeria.com" target="_blank"><img src="./images/link.png"></a>
+            </div>
+        </div>
+
+        <div class="project-container" id="four">
+            <div class="overlay-container"></div>
+            
+            <div class="project-info">
+
+            
+            <h2>Wisdom Vault</h2>
+            <p>A simple digital products e-commerce site</p>
+            </div>
+            <div class="project-link">
+                <a href="https://wisdom-vault.netlify.app/" target="_blank"><img src="./images/link.png"></a>
+            </div>
+        </div>
+
+        <div class="project-container" id="five">
+            
+            <div class="overlay-container"></div>
+
+            <div class="project-info">
+            
+            <h2>Alpha News Nigeria</h2>
+            <p>A live wordpress site</p>
+            </div>
+            <div class="project-link">
+                <a href="www.nigeria.com" target="_blank"><img src="./images/link.png"></a>
+            </div>
+        </div>
+
+        <div class="project-container" id="six">
+
+            <div class="overlay-container"></div>
+
+            <div class="project-info">            
+
+            <h2>Youtube</h2>
+            <p>This project imitates Youtube site</p>
+            </div>
+            <div class="project-link">
+                <a href="www.nigeria.com" target="_blank"><img src="./images/link.png"></a>
+            </div>
+        </div>
+
+        <div class="project-container" id="seven">
+
+            <div class="overlay-container"></div>
+
+            <div class="project-info">
+            
+            <h2>Zorgblag's Blog</h2>
+            <p>A single page simple blog</p>
+            </div>
+            <div class="project-link">
+                <a href="www.nigeria.com" target="_blank"><img src="./images/link.png"></a>
+            </div>
+        </div>
+
+        <div class="project-container" id="eight">
+            <div class="overlay-container"></div>
+            
+            <div class="project-info">
+
+            
+            <h2>Udemy</h2>
+            <p>This project imitates Udemy site</p>
+            </div>
+            <div class="project-link">
+                <a href="www.nigeria.com" target="_blank"><img src="./images/link.png"></a>
+            </div>
+        </div>
+
+        <div class="project-container" id="nine">
+            
+            <div class="overlay-container"></div>
+
+            <div class="project-info">
+            
+                <h2>Alien Abduction Form</h2>
+                <p>Just as the name implies</p>
+            </div>
+
+            
+            
+            <div class="project-link">
+                <a href="www.nigeria.com" target="_blank"><img src="./images/link.png"></a>
+            </div>
+        </div>
+
+
+        <div class="project-container" id="ten">
+            
+            <div class="overlay-container"></div>
+
+            <div class="project-info">
+            
+                <h2>OFX Forex System</h2>
+                <p>A Forex website</p>
+            </div>
+
+            
+            
+            <div class="project-link">
+                <a href="www.nigeria.com" target="_blank"><img src="./images/link.png"></a>
+            </div>
+        </div>
+
+
+        <div class="project-container" id="eleven">
+            
+            <div class="overlay-container"></div>
+
+            <div class="project-info">
+            
+                <h2>Portfolio 2</h2>
+                <p>My first portfolio</p>
+            </div>
+
+            
+            
+            <div class="project-link">
+                <a href="www.nigeria.com" target="_blank"><img src="./images/link.png"></a>
+            </div>
+        </div>
+
+
+        <div class="project-container" id="twelve">
+            
+            <div class="overlay-container"></div>
+
+            <div class="project-info">
+            
+                <h2>menu Homepage</h2>
+                <p>Simple home page</p>
+            </div>
+
+            
+            
+            <div class="project-link">
+                <a href="www.nigeria.com" target="_blank"><img src="./images/link.png"></a>
+            </div>
+        </div>
+
+
+        <div class="project-container" id="thirteen">
+            
+            <div class="overlay-container"></div>
+
+            <div class="project-info">
+            
+                <h2>Weather Application</h2>
+                <p>Simple but efficient weather app</p>
+            </div>
+
+            
+            
+            <div class="project-link">
+                <a href="www.nigeria.com" target="_blank"><img src="./images/link.png"></a>
+            </div>
+        </div>
+
+
+        <div class="project-container" id="fourteen">
+            
+            <div class="overlay-container"></div>
+
+            <div class="project-info">
+            
+                <h2>Product Blogsite</h2>
+                <p>A neat WP blog</p>
+            </div>
+
+            
+            
+            <div class="project-link">
+                <a href="www.nigeria.com" target="_blank"><img src="./images/link.png"></a>
+            </div>
+        </div>
+
+
+        <div class="project-container" id="fifteen">
+            
+            <div class="overlay-container"></div>
+
+            <div class="project-info">
+            
+                <h2>To-Do list</h2>
+                <p>A simple but efficient to-do list</p>
+            </div>
+
+            
+            
+            <div class="project-link">
+                <a href="www.nigeria.com" target="_blank"><img src="./images/link.png"></a>
+            </div>
+        </div>
+
+
+        <div class="project-container" id="sixteen">
+            
+            <div class="overlay-container"></div>
+
+            <div class="project-info">
+            
+                <h2>Feednews Blogsite</h2>
+                <p>Another WP blog</p>
+            </div>
+
+            
+            
+            <div class="project-link">
+                <a href="www.nigeria.com" target="_blank"><img src="./images/link.png"></a>
+            </div>
+        </div>
+
+
+        <div class="project-container" id="seventeen">
+            
+            <div class="overlay-container"></div>
+
+            <div class="project-info">
+            
+                <h2>DOO Digital Agency</h2>
+                <p>A WP services site</p>
+            </div>
+
+            
+            
+            <div class="project-link">
+                <a href="www.nigeria.com" target="_blank"><img src="./images/link.png"></a>
+            </div>
+        </div>
+
+        <div class="project-container" id="eighteen">
+            
+            <div class="overlay-container"></div>
+
+            <div class="project-info">
+            
+                <h2>DOO Digital Agency</h2>
+                <p>A WP services site</p>
+            </div>
+
+            
+            
+            <div class="project-link">
+                <a href="www.nigeria.com" target="_blank"><img src="./images/link.png"></a>
+            </div>
+        </div>
+
+
+        
+    </div>
+    <script src="./Js/portfolio.js"></script>
+
+</body>
+</html>

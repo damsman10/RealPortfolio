@@ -1,0 +1,517 @@
+#body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  color: #000;
+  transition: color 0.3s ease;
+  /* show scroll bar */
+  overflow: auto;
+}
+
+.dark-mode #body {
+background-color: #000;
+color: #fff;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 1.5rem;
+  padding-left: 1rem;
+}
+
+header {
+  height: 50px; 
+}
+
+.logo .darkLogo {
+  display: none;
+}
+
+.dark-mode .logo .darkLogo {
+  display: block;
+  margin-top: 0;
+}
+
+.dark-mode .logo .whiteLogo {
+  display: none;
+}
+
+.nav .right-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 0.5rem;
+  padding-right: 1.5rem;
+}
+
+.hamburgerContainer {
+  font-size: 1.8rem;
+  color: #000;
+  margin: 5px 20px 0 0;
+  display: none;
+  cursor: pointer;
+}
+
+/* Styles for the mobile navigation menu */
+#navMenuHam {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navMenuHam li {
+  margin-bottom: 10px;
+}
+
+.hamburgerContainer .dark-ham {
+  display: none;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+
+/* Additional styles for the close button */
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px; /* Adjust the font size as needed */
+  cursor: pointer;
+}
+
+.nav ul {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0;
+}
+.nav ul li {
+  list-style-type: none;
+  font-family: 'Inter', sans-serif;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease;
+}
+.nav ul li .active{
+text-decoration: overline;
+color: red;
+}
+.nav ul li:hover{
+  text-decoration:overline;
+  color: red;
+}
+
+.dark-mode .nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+.dark-mode .nav ul li .active{
+text-decoration: overline;
+color: red;
+}
+.dark-mode .nav ul li:hover{
+  text-decoration:overline;
+  color: red;
+}
+
+.toggle-button {
+  margin-right: 15px;
+}
+
+
+
+.container {
+    display: flex;
+    margin-left: 10%;
+    
+}
+
+
+/* .leftSidebar {
+    width: 40%;
+} */
+
+header {
+    margin-top: 5px;
+    height: 50px;
+}
+
+
+
+
+.rightSidebar {
+    width: 60%;
+    height: 100%;
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+
+/* ------------------------------------------------------- */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox*/
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  
+
+  /* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #000;
+    border:1px solid white;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  /* ------------------------------------------------------- */
+
+
+.relativeContainer {
+  height: 20rem;
+  margin: auto;
+  margin-top: 12rem;
+  /* background-size: cover; */
+  width: 50%;
+}
+
+.centerContent h1 {
+  font-size: 5rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+
+.centerContent p {
+  font-size: 2rem;
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.portContainer {
+  background-color: transparent;
+  margin: 8rem 0 3rem 12rem;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+/* Style for the container */
+.project-container {
+  margin: 0;
+  position: relative;
+  width: 30%;
+  border: 2px solid #000;
+  margin-bottom: 3rem;
+  height: 300px;
+  background-color: #f0f0f0;
+  /* background-image: url('../images/My-Portfolio.png'); //check individual IDs for images
+  background-size: cover;*/
+  overflow: hidden;
+}
+
+
+/* Style for the overlay container */
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9); /* Adjust the alpha value for the desired transparency */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Style for the link, h2, and p, initially hidden */
+.project-link, .project-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0; /*opacity at 0 hides it */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Add hover effect to the container */
+.project-container:hover .overlay-container,
+.project-container:hover .project-link,
+.project-container:hover .project-info {
+  opacity: 1;
+}
+
+.project-info {
+  color: white;
+}
+.project-link {
+  top: 80%;
+}
+
+#one {
+  background-image: url('../images/portfolink.png');
+  background-size: cover;
+}
+#two {
+  background-image: url('../images/recipe-book.png');
+  background-size: cover;
+}
+#three {
+  background-image: url('../images/cipher.png');
+  background-size: cover;
+}
+#four {
+  background-image: url('../images/Wisdom-vault.png');
+  background-size: cover;
+}
+#five {
+  background-image: url('../images/alpha.png');
+  background-size: cover;
+}
+#six {
+  background-image: url('../images/Youtube-ss.png');
+  background-size: cover;
+}
+#seven {
+  background-image: url('../images/Alien-Blog.png');
+  background-size: cover;
+}
+#eight {
+  background-image: url('../images/Udemy-ss.png');
+  background-size: cover;
+}
+#nine {
+  background-image: url('../images/Alien-Form.png');
+  background-size: cover;
+}
+#ten {
+  background-image: url('../images/ofx-ss.png');
+  background-size: cover;
+}
+#eleven {
+  background-image: url('../images/portfolio-ss.png');
+  background-size: cover;
+}
+#twelve {
+  background-image: url('../images/menu-ss.png');
+  background-size: cover;
+}
+#thirteen {
+  background-image: url('../images/Weather-App.png');
+  background-size: cover;
+}
+#fourteen {
+  background-image: url('../images/Product.png');
+  background-size: cover;
+}
+#fifteen {
+  background-image: url('../images/To-Do-List.png');
+  background-size: cover;
+}
+#sixteen {
+  background-image: url('../images/Home-FeedNews.png');
+  background-size: cover;
+}
+#seventeen {
+  background-image: url('../images/doo-ss.png');
+  background-size: cover;
+}
+#eighteen {
+  background-image: url('../images/doo-ss.png');
+  background-size: cover;
+}
+
+
+
+/* ------------------------------------------ */
+
+
+
+@media only screen and (max-width: 1400px) {
+  .portContainer {
+    margin-left: 10%;
+}
+}
+
+@media only screen and (max-width: 1200px) {
+
+.project-container {
+  width: 45%;
+}
+}
+
+
+@media only screen and (max-width: 1011px) {
+  /* .logo img {
+    width: 35%;
+  } */
+  .nav ul {
+    display: none;
+  }
+  /* .nav ul.active {
+    display: block;
+  } */
+
+  .nav .toggle-button {
+    display: none;
+  }
+  
+  
+  #navMenuHam.active {
+    display: block;
+  }
+
+   /* --------------- */
+   .dark-mode #navMenuHam.active {
+    display: block;
+  }
+
+  .dark-mode #navMenuHam {
+    background-color: #000;
+  }
+  .dark-mode .closeButton {
+    color: #ffffff;
+  }
+  .dark-mode #navMenuHam {
+    background-color: #000;
+  }
+  /* --------------- */
+
+
+  .hamburgerContainer {
+    display: block;
+    cursor: pointer;
+    padding: 10px;   
+  }
+
+  /* -------------- dark mode hamburger -------- */
+  .dark-mode .hamburgerContainer .light-ham {
+    display: none;
+  }
+  .dark-mode .hamburgerContainer .dark-ham {
+    display: block;
+  }
+/* -------------- dark mode hamburger -------- */
+
+  #overlay.active {
+    display: block;
+  }
+
+  #navMenuHam {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+      background-color: #fff;
+  }
+  .text {
+    margin-top: 6.7rem;
+  }
+  .nav .right-nav {
+    padding-top: 0;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+.portContainer {
+    margin-top: 10rem;
+}
+}
+
+@media only screen and (max-width: 709px) {
+.portContainer {
+  margin-top: 12rem;
+}
+
+.project-container {
+  width: 90%;
+  margin-left: 10.5%;
+}
+
+.centerContent h1 {
+  font-size: 4rem;
+}
+
+.centerContent p {
+  font-size: 1.8rem;
+}
+}
+
+
+
+

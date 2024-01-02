@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+
+
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <link rel="stylesheet" href="./Styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@700&family=Lora:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+
+    <header class="nav">
+        
+        <div class="logo">
+            <a href="index.html" class="whiteLogo"><img src="./images/Personal Logo.png" alt="logo"></a>
+            <a href="index.html" class="darkLogo"><img src="./images/Personal-Logo-white.png" alt="logo"></a>
+        </div>
+        
+
+        <div class="right-nav">
+            <div class="hamburgerContainer">
+            <!-- numeric character code/reference in HTML for Hamburger-->
+            <span class="light-ham" style="color: rgb(0, 0, 0);">&#9776;</span>
+            <span class="dark-ham" style="color: rgb(255, 255, 255);">&#9776;</span>
+            </div>
+        
+            <div class="overlay" id="overlay">
+                <div class="closeButton" onclick="closeOverlay()">&times;</div>
+                <ul class="menu" id="navMenuHam">
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                
+
+
+            </div>
+        
+        
+
+            <ul class="menu">
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+
+
+    
+
+            <div class="toggle-button" >
+                <label class="switch" id="togg">
+                    <input type="checkbox" id="toggleCheckbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+        </div>
+        
+    
+    </header>
+
+
+    <div class="container">
+
+
+
+
+        <div class="leftSidebar">
+            <div class="overlayy"></div>
+            <div class="newHeroImage">
+                <img src="./images/boss.png" alt="ONI Damilola Img" />
+           </div>
+                       
+
+            <div class="relativeContainer">
+                
+                
+                <div class="middleContent">
+                    <h1>DAMILOLA ONI</h1>
+                    <p>I Craft Vibrant Web Experiences From Code</p>
+                    <h4>...WHERE INNOVATION MEETS IMAGINATION</h4>
+                    <a href="contact.html"><button>Hire Me</button></a>
+                </div>
+            </div>
+
+            <div class="foot">
+                <ul class="leftFooter">
+                    <li><a href="https://www.linkedin.com/in/damilola-oni-3a6811107/">LinkedIn</a></li>
+                    <li><a href="https://github.com/damsman10">Github</a></li>
+                    <li><a href="mailto: damilolaoni07@gmail.com">Email</a></li>
+                    <li><a href="https://wa.me/2348108648372">Whatsapp</a></li>
+                </ul>
+                <div class="rightFooter">
+                    <p>© 2023 Oni Damilola</p>
+                </div> 
+
+            </div>
+        </div>
+
+
+        
+
+    </div>
+    <script src="./Js/script.js"></script>
+</body>
+</html>
