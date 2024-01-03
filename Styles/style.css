@@ -461,8 +461,17 @@ h1 {
   background: rgba(255, 255, 255, 0.6); /* Adjust the alpha value for the desired transparency */
   /* opacity: 0; */
   /* transition: opacity 0.3s ease-in-out; */
+  z-index: 1;
+}
+
+.logo, .hamburgerContainer {
   z-index: 2;
 }
+.overlay {
+  z-index: 5;
+}
+
+
 
 .rightFooter p{
   color: #000;
@@ -491,6 +500,10 @@ margin-left: 2.8rem;
   } 
   .newHeroImage {
     left: 1%;
+  }
+
+  body {
+    overflow: auto;
   }
 }
 

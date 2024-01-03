@@ -75,7 +75,8 @@ hamburgerContainer.addEventListener('click', function () {
 
 
 function downloadFile() {
-    const pdfPath = './resources/Oni_Damilola_CV.pdf';
+    const pdfPath = 'https://github.com/damsman10/RealPortfolio/blob/main/Resources/Oni_Damilola_CV.pdf';
+    // const pdfPath = './resources/Oni_Damilola_CV.pdf';
 
     fetch(pdfPath)
         .then(response => {
