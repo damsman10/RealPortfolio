@@ -242,10 +242,10 @@ color: red;
   /* ------------------------------------------------------- */
 
 .contactContainer {
-  width: 70%;
+  width: 80%;
   margin: auto;
   margin-top: 8rem;
-  background-color: #3b586e;
+  background-color: #0f0a25;
 }
 
 .conText {
@@ -256,7 +256,7 @@ color: red;
 }
 
 .conText {
-    color: white;
+    color: rgb(255, 255, 255);
     margin-top: 0;
     padding: 20px;
     text-align: center;
@@ -274,7 +274,7 @@ color: red;
     padding: 15px;
     height: 1.2rem;
     width: 40%;
-    background-color: #ccc;
+    background-color: #ffffff;
     border: none;
 }
 #emailInput {
@@ -282,19 +282,19 @@ color: red;
     padding: 15px;
     height: 1.2rem;
     width: 40%;
-    background-color: #ccc;
+    background-color: #ffffff;
     border: none;
 }
 #message {
     margin: 0 15px 15px 15px;
     padding: 15px;
     height: 18rem;
-    width: 92%;
-    background-color: #ccc;
+    width: 90%;
+    background-color: #ffffff;
     border: none;
 }
 #message::placeholder{
-    text-align: center;
+    text-align: left;
 }
 
 .submitMessage {
@@ -424,5 +424,42 @@ color: red;
   .nav .right-nav {
     padding-top: 0;
   }
+
+
+
+  .rightSidebar {
+    width: 85%;
 }
+
+  .rowInput {
+  display: block;
+}
+
+.contactContainer {
+  width: 90%;
+}
+
+#nameInput {
+  width: 80%;
+}
+#emailInput {
+  width: 80%;
+}
+#message {
+  width: 80%;
+}
+.buttonMessage {
+  text-align: left;
+}
+
+.submitMessage {
+  background-color: #79a8ce;
+  color: #0f0a25;
+}
+
+
+
+
+}
+
 
